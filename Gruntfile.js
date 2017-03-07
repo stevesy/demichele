@@ -9,10 +9,10 @@ module.exports = function (grunt) {
 			'!<%= contentDir %>js/_libs/**/*.js'
 		],
 		sassSrc: [
-			'<%= contentDir %>scss/*.scss',
+			'<%= contentDir %>assets/styles/*.scss',
 			//excludes
-			'!<%= contentDir %>scss/*/*.scss',
-			'!<%= contentDir %>scss/_*.scss'
+			'!<%= contentDir %>assets/styles/*/*.scss',
+			'!<%= contentDir %>assets/styles/_*.scss'
 		],
 
 		sass: {
@@ -23,23 +23,15 @@ module.exports = function (grunt) {
 				expand: true,
 				flatten: true,
 				src: '<%= sassSrc %>',
-				dest: '<%= contentDir %>css/',
+				dest: '<%= contentDir %>public/css/',
 				ext: '.css'
 			}
 		},
 
-		jshint: {
-			all: ['Gruntfile.js', '<%= jsSrc %>']
-		},
-
 		watch: {
 			sass: {
-				files: '<%= contentDir %>scss/*.scss',
+				files: '<%= contentDir %>assets/styles/*.scss',
 				tasks: 'sass:dist'
-			},
-			js: {
-				files: ['Gruntfile.js', '<%= jsSrc %>'],
-				tasks: 'jshint'
 			}
 		}
 
@@ -47,7 +39,4 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-usemin');
-
 };

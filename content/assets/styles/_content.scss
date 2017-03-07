@@ -50,10 +50,10 @@
 
 .parallax {
 	position: relative;
-	padding-bottom: 58%;
 	background-color: $body-bg;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+	height: 100vh;
 }
 
 .close {
@@ -70,9 +70,7 @@
 	font-size: 20px;
 	font-weight: 100;
 	text-align: center;
-	-moz-transition: background .3s;
-	-webkit-transition: background .3s;
-	transition: background .3s;
+	transition: background 300ms;
 
 	&:hover {
 		background: #d7d7d7;
