@@ -36,19 +36,19 @@ var loadParallaxImage = function() {
 };
 
 $(function() {
-	//== add class to html based on whether device is mobile or not
+	// add class to html based on whether device is mobile or not
 	if (isMobile) {
 		$('html').addClass('mobile');
 	} else {
 		$('html').addClass('no-mobile');
 	}
 
-	//== disable tel links on non-mobilr devices
+	// disable tel links on non-mobilr devices
 	$('.no-mobile a[href^="tel:"]').on('click tap', function(e) {
 		e.preventDefault();
 	});
 
-	//== smooth scrolling
+	// smooth scrolling
 	$('a[href*=#]:not([href=#])').on('click tap', function() {
 		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'')
 			&& location.hostname === this.hostname) {
@@ -111,7 +111,7 @@ $(function() {
 		$('.progress-bar').css('top', parseInt(70 - x,null) + 'px');
 	});
 
-	//== services modals
+	// services modals
 	$('.modal-trigger').on('click tap', function(e) {
 		e.preventDefault();
 		$('html, body').animate({
@@ -126,7 +126,7 @@ $(function() {
 		$(this).parents('.modal').fadeOut('150').removeClass('active');
 	});
 
-	//== featured projects slider
+	// featured projects slider
 	$('.featured-projects-slider .close').on('click tap', function(e) {
 		e.preventDefault();
 		$('.featured-projects-slider').slideUp('150').removeClass('open');
