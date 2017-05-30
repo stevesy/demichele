@@ -1,15 +1,6 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		contentDir: 'content/',
-		srcDir: 'content/assets/',
-		distDir: 'content/public/',
-		sassSrc: [
-			'<%= contentDir %>assets/styles/*.scss',
-			//excludes
-			'!<%= contentDir %>assets/styles/*/*.scss',
-			'!<%= contentDir %>assets/styles/_*.scss'
-		],
 
 		browserify: {
 			dist: {
@@ -20,7 +11,7 @@ module.exports = function (grunt) {
 					}
 				},
 				files: {
-					'<%= distDir %>js/site.js': '<%= srcDir %>scripts/site.js'
+					'public/js/site.js': 'assets/scripts/site.js'
 				}
 			}
 		},
@@ -32,21 +23,19 @@ module.exports = function (grunt) {
 					quoteStyle: 1,
 				},
 				files: {
-					'<%= distDir %>js/site.js': '<%= distDir %>js/site.js'
+					'public/js/site.js': 'public/js/site.js'
 				}
 			}
 		},
 
 		sass: {
+			options: {
+				sourceMap: true
+			},
 			dist: {
-				options: {
-					style: 'compressed'
-				},
-				expand: true,
-				flatten: true,
-				src: '<%= sassSrc %>',
-				dest: '<%= distDir %>css/',
-				ext: '.css'
+				files: {
+					'public/css/site.css': 'assets/styles/site.scss'
+				}
 			}
 		},
 
@@ -55,29 +44,30 @@ module.exports = function (grunt) {
 				processors: [
 					require('autoprefixer') ({
 						browsers: ['last 2 versions']
-					})
+					}),
+					require('cssnano')
 				]
 			},
 			dist: {
-				src: '<%= distDir %>css/site.css'
+				src: 'public/css/site.css'
 			}
 		},
 
 		watch: {
 			css: {
-				files: ['<%= srcDir %>styles/**/*.scss'],
-				tasks: ['sass', 'postcss']
+				files: ['assets/styles/**/*.scss'],
+				tasks: 'sass'
 			},
 			js: {
-				files: ['Gruntfile.js', '<%= srcDir %>/**/*.js'],
-				tasks: ['browserify', 'uglify']
+				files: ['Gruntfile.js', 'assets/scripts/**/*.js'],
+				tasks: 'browserify'
 			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-browserify');
-	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-postcss');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 };

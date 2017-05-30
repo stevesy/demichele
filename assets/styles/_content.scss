@@ -1,0 +1,84 @@
+.row {
+	max-width: 880px;
+}
+
+.panel {
+	padding: 25px 30px;
+	height: 100%;
+	background-color: $panel-bg;
+}
+
+.section {
+	position: relative;
+	z-index: 4;
+	padding: 200px 0;
+	background-color: #e9e9e9;
+	box-shadow: 0 0 50px rgba(0,0,0,.5);
+
+	@media only screen and (max-width: 767px) {
+		padding: 100px 0;
+	}
+}
+
+.section-header {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.section-title {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.section-content {
+	overflow: hidden;
+}
+
+.section-about,
+.section-services,
+.section-projects {
+
+	.section-header {
+		margin-top: -40px;
+	}
+
+	.section-title {
+		padding-bottom: .35em;
+		border-bottom: 1px solid $brand-primary;
+	}
+}
+
+.parallax {
+	position: relative;
+	background-color: $body-bg;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.close {
+	position: absolute;
+	top: -90px;
+	right: 0;
+	z-index: 99;
+	display: block;
+	background: #fff;
+	color: #aaa;
+	text-decoration: none;
+	width: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 100;
+	text-align: center;
+	transition: background 300ms;
+
+	&:hover {
+		background: #d7d7d7;
+		color: #aaa;
+	}
+}
+
+@import "section-about";
+@import "section-services";
+@import "section-projects";
+@import "section-contact";

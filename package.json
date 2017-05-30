@@ -7,16 +7,20 @@
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.8.0"
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0"
   },
   "scripts": {
     "start": "http-server ./ -p 1337 -o",
-    "watch": "grunt watch"
+    "watch": "grunt watch",
+    "build": "grunt browserify && grunt sass",
+    "build:prod": "grunt browserify && grunt uglify && grunt sass && grunt postcss"
   },
   "dependencies": {
     "http-server": "^0.9.0"
