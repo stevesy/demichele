@@ -10,16 +10,19 @@
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0"
   },
   "scripts": {
     "start": "http-server ./ -p 1337 -o",
     "watch": "grunt watch",
-    "build": "grunt browserify && grunt sass",
-    "build:prod": "grunt browserify && grunt uglify && grunt sass && grunt postcss"
+    "build": "grunt browserify && grunt sass && grunt newer:copy && grunt newer:imagemin",
+    "build:prod": "grunt browserify && grunt uglify && grunt sass && grunt postcss && grunt newer:copy && grunt newer:imagemin"
   },
   "dependencies": {
     "http-server": "^0.9.0"

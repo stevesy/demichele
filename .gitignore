@@ -1,4 +1,3 @@
 node_modules
 .sass-cache
-/content/public/css
-/content/public/js
+public

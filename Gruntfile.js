@@ -53,6 +53,31 @@ module.exports = function (grunt) {
 			}
 		},
 
+		imagemin: {
+			dist: {
+				static: {
+					options: {
+						optimizationLevel: 3
+					}
+				},
+				files: [{
+					expand: true,
+					cwd: 'assets/images/',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'public/img/'
+				}]
+			}
+		},
+
+		copy: {
+			fonts: {
+				expand: true,
+				cwd: 'assets/fonts/',
+				src: '**',
+				dest: 'public/fonts/',
+			}
+		},
+
 		watch: {
 			css: {
 				files: ['assets/styles/**/*.scss'],
@@ -70,4 +95,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-newer');
 };
