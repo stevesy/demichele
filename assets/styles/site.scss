@@ -1,22 +1,23 @@
-//== vars
 @import "variables";
 
-//== fonts
+
 @import "fonts";
 
-//== base styles
-@import "normalize";
+// Normalize.css
+//
+@import "../../node_modules/normalize.css/normalize";
+
+// Base styles
+//
 @import "grid";
 @import "defaults";
 @import "base";
 @import "buttons";
-@import "icons";
-@import "forms";
-@import "tables";
 @import "header";
 @import "footer";
 @import "content";
-
-//== plugin-dependent styles
-@import "flexslider";
-@import "fancybox";
+@import "slider";
+@import "section-about";
+@import "section-services";
+@import "section-projects";
+@import "section-contact";

@@ -5,13 +5,8 @@
 	z-index: 99999999;
 	width: 100%;
 	height: 70px;
-	background-color: #222;
-	background-color: rgba(0,0,0,.85);
+	background-color: rgba(#000,0.85);
 	color: #fff;
-
-	@media only screen and (max-width: 767px) {
-		//position: relative;
-	}
 }
 
 #site-title {
@@ -24,7 +19,12 @@
 		display: block;
 		height: 37px;
 		text-indent: -999em;
-		background: transparent url('../img/logo-mdm.png');
+		background: transparent url('../img/logo-mdm.png') no-repeat center;
+		background-size: 140px 37px;
+
+		@media #{$query-retina} {
+			background-image: url('../img/logo-mdm@2x.png');
+		}
 	}
 }
 
@@ -37,7 +37,7 @@
 
 .nav {
 	float: right;
-	margin: 22px 0 0 0;	
+	margin: 22px 0 0;	
 }
 
 .nav-item {
@@ -53,22 +53,22 @@
 	height: 4px;
 	background-color: #a7aa4b;
 	opacity: 0;
-	-moz-transition: all .3s;
-	-webkit-transition: all .3s;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .nav-link {
 	display: block;
 	padding: 1em;
 	color: #ccc;
-	color: rgba(255,255,255,.8);
+	color: rgba(#fff,0.8);
 	text-decoration: none;
-	-moz-transition: color .15s;
-	-webkit-transition: color .15s;
-	transition: color .15s;
+	transition: color 0.15s;
 
-	&:hover { color: #fff; }
+	&:hover {
+		color: #fff;
+	}
 }
 
-.nav-item.current .nav-link { color: #fff; }
+.nav-item.current .nav-link {
+	color: #fff;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" class="no-js">
+	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=1024, user-scalable=1" />
@@ -24,9 +25,7 @@
 			<div class="row app-bar">
 				<div class="col">
 					<h6 id="site-title">
-						<a href="/">
-							<span>DeMichele Co. Commercial Real Estate Services</span>
-						</a>
+						<a href="/">DeMichele Co. Commercial Real Estate Services</a>
 					</h6>
 				</div>
 			</div>
@@ -123,7 +122,9 @@
 						</div>
 					</li>
 				</ul>
-				<div class="progress-bar"><div></div></div>
+				<div class="progress-bar">
+					<div></div>
+				</div>
 			</div>
 
 			<section class="section section-about" id="about">
@@ -145,354 +146,332 @@
 				</div>
 			</section>
 
-			<div class="parallax"
-				data-background-image="/public/img/parallax-1.jpg"
-				data-stellar-background-ratio="0.5"
-				data-horizontal-scrolling="false">
-			</div>
+			<div class="parallax" data-background-image="/public/img/parallax-1.jpg"
+			data-stellar-background-ratio="0.5" data-horizontal-scrolling="false"></div>
 
 			<section class="section section-services" id="services">
-				<div class="section-header row">
-					<div class="col">
-						<h2 class="section-title">Services</h2>
+				<div class="align-center">
+					<h2 class="section-title">Services</h2>
+				</div>
+				<ul class="reduced service-list row">
+					<li>
+						<a class="service service-1 modal-trigger" data-modal-target="modal-service-1" href="#">
+							<span>Design and project management consulting</span>
+						</a>
+					</li>
+					<li>
+						<a class="service service-2 modal-trigger" data-modal-target="modal-service-2" href="#">
+							<span>Pre&#45;development site selection &plus; build&#45;to&#45;suit capability</span>
+						</a>
+					</li>
+					<li>
+						<a class="service service-3 modal-trigger" data-modal-target="modal-service-3" href="#">
+							<span>Leasing, brokerage, investment and property management</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="modal" id="modal-service-1">
+					<div class="modal-inner">
+						<div class="panel" id="owners-representation">
+							<h2>Design and project management consulting</h2>
+							<div class="label">Owner&rsquo;s Representation</div>
+							<p>If you self&#45;develop, an Owner&rsquo;s Rep is key to risk control, outcome certainty, and streamlining the process and schedule. The DeMichele Company will run your project as if it was our own. After all, you have a business to run. you stay focused on your business while we manage the details.</p>
+						</div>
+						<div class="panel" id="owner">
+							<div class="icon"></div>
+							<div class="label">Owner</div>
+						</div>
+						<div class="panel" id="demichele">
+							<div class="icon"></div>
+							<div class="label">DeMichele</div>
+						</div>
+						<div class="panel" id="land-and-building">
+							<div class="icon"></div>
+							<div class="label">Land &plus; Building</div>
+						</div>
+						<div class="panel" id="design">
+							<div class="icon"></div>
+							<div class="label">Design</div>
+						</div>
+						<div class="panel" id="entitlements">
+							<div class="icon"></div>
+							<div class="label">Entitlements, Approval &plus; Finance</div>
+						</div>
+						<div class="panel" id="contractors">
+							<div class="icon"></div>
+							<div class="label">Contractors &plus; Subcontractors</div>
+						</div>
+						<div class="panel" id="occupancy">
+							<div class="icon"></div>
+							<div class="label">Occupancy</div>
+						</div>
+						<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
 					</div>
 				</div>
 
-				<div class="section-content">
-					<ul class="reduced service-list row">
-						<li>
-							<a class="service service-1 modal-trigger" data-modal-target="modal-service-1" href="#">
-								<span>Design and project management consulting</span>
-							</a>
-						</li>
-						<li>
-							<a class="service service-2 modal-trigger" data-modal-target="modal-service-2" href="#">
-								<span>Pre&#45;development site selection &plus; build&#45;to&#45;suit capability</span>
-							</a>
-						</li>
-						<li>
-							<a class="service service-3 modal-trigger" data-modal-target="modal-service-3" href="#">
-								<span>Leasing, brokerage, investment and property management</span>
-							</a>
-						</li>
-					</ul>
-
-					<div class="modal" id="modal-service-1">
-						<div class="modal-inner">
-							<div class="panel" id="owners-representation">
-								<h2>Design and project management consulting</h2>
-								<div class="label">Owner&rsquo;s Representation</div>
-								<p>If you self&#45;develop, an Owner&rsquo;s Rep is key to risk control, outcome certainty, and streamlining the process and schedule. The DeMichele Company will run your project as if it was our own. After all, you have a business to run. you stay focused on your business while we manage the details.</p>
-							</div>
-							<div class="panel" id="owner">
-								<div class="icon"></div>
-								<div class="label">Owner</div>
-							</div>
-							<div class="panel" id="demichele">
-								<div class="icon"></div>
-								<div class="label">DeMichele</div>
-							</div>
-							<div class="panel" id="land-and-building">
-								<div class="icon"></div>
-								<div class="label">Land &plus; Building</div>
-							</div>
-							<div class="panel" id="design">
-								<div class="icon"></div>
-								<div class="label">Design</div>
-							</div>
-							<div class="panel" id="entitlements">
-								<div class="icon"></div>
-								<div class="label">Entitlements, Approval &plus; Finance</div>
-							</div>
-							<div class="panel" id="contractors">
-								<div class="icon"></div>
-								<div class="label">Contractors &plus; Subcontractors</div>
-							</div>
-							<div class="panel" id="occupancy">
-								<div class="icon"></div>
-								<div class="label">Occupancy</div>
-							</div>
-							<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
+				<div class="modal" id="modal-service-2">
+					<div class="modal-inner">
+						<div class="modal-content">
+							<h2>Pre&#45;development site selection <span class="line">and build&#45;to&#45;suit capability</span></h2>
+							<p>The DeMichele Company will help analyze and value your existing real estate holdings, providing market knowledge and information to aid real estate decision&#45;making. Locating and unearthing building sites is a particular specialty requiring experience, foresight, and market information acumen. As an Architect, Mr. DeMichele can visualize your building needs and vision.</p>
 						</div>
+						<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
 					</div>
+				</div>
 
-					<div class="modal" id="modal-service-2">
-						<div class="modal-inner">
-							<div class="modal-content">
-								<h2>Pre&#45;development site selection <span class="line">and build&#45;to&#45;suit capability</span></h2>
-								<p>The DeMichele Company will help analyze and value your existing real estate holdings, providing market knowledge and information to aid real estate decision&#45;making. Locating and unearthing building sites is a particular specialty requiring experience, foresight, and market information acumen. As an Architect, Mr. DeMichele can visualize your building needs and vision.</p>
-							</div>
-							<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
+				<div class="modal" id="modal-service-3">
+					<div class="modal-inner">
+						<div class="modal-content">
+							<h2>Leasing, brokerage, <span class="line">investment and</span> property management</h2>
+							<p>Michael DeMichele has 20&#45;years&rsquo; experience in Leasing and Selling land, space and buildings and is a licensed realtor in Wisconsin. Mr. DeMichele owns and manages a portfolio of commercial property for his own account and offers this experience, knowledge, and most importantly, his rolodex, to his clients. searching for someone to handle a specific need or project? chances are, DeMichele&rsquo;s got the guy.</p>
 						</div>
-					</div>
-
-					<div class="modal" id="modal-service-3">
-						<div class="modal-inner">
-							<div class="modal-content">
-								<h2>Leasing, brokerage, <span class="line">investment and</span> property management</h2>
-								<p>Michael DeMichele has 20&#45;years&rsquo; experience in Leasing and Selling land, space and buildings and is a licensed realtor in Wisconsin. Mr. DeMichele owns and manages a portfolio of commercial property for his own account and offers this experience, knowledge, and most importantly, his rolodex, to his clients. searching for someone to handle a specific need or project? chances are, DeMichele&rsquo;s got the guy.</p>
-							</div>
-							<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
-						</div>
+						<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
 					</div>
 				</div>
 			</section>
 
-			<div class="parallax"
-				data-background-image="/public/img/parallax-2.jpg"
-				data-stellar-background-ratio="0.5"
-				data-horizontal-scrolling="false">
-			</div>
+			<div class="parallax" data-background-image="/public/img/parallax-2.jpg"
+			data-stellar-background-ratio="0.5" data-horizontal-scrolling="false"></div>
 
 			<section class="section section-projects" id="projects">
-				<div class="section-header row">
-					<div class="col">
-						<h2 class="section-title">Featured Projects</h2>
+				<div class="align-center">
+					<h2 class="section-title">Featured Projects</h2>
+				</div>
+				<div class="row">
+					<div class="featured-projects-slider col" style="display:none">
+						<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
+						<ul class="reduced slides slides-outer group">
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">Harken Yacht Equipment</h2>
+										<ul class="list-inline">
+											<li>Concept through occupancy</li>
+										</ul>
+									</header>
+									<p class="project-description">The DeMichele Company managed all aspects of the Architecture, engineering, Harken Critical Manufacturing and Office Building Performance Specifications, Civil Engineer, Municipal Entitlements, DNR, DOT, WE Energies, Contractor Bidding and Contract Negotiation, Bank Draws and On-Site Overview for this 170,000 sq ft facility. The DeMichele Company saved 2.5 buildable acres by overcoming DNR setbacks, allowing a more favorable alignment of the building and more efficient use of the site. Moreover, we helped save hundreds of thousands of dollars through the competitive bidding process.</p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-1.jpg" alt="Harken exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-2.jpg" alt="Harken interior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-3.jpg" alt="Harken interior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-4.jpg" alt="Harken warehouse" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">88Nine Radio Milwaukee</h2>
+										<ul class="list-inline">
+											<li>Real estate advisory</li>
+											<li>Project developer</li>
+											<li>Owner&rsquo;s representative</li>
+										</ul>
+									</header>
+									<p class="project-description">Renovated vacant 1940s industrial building in Milwaukee&rsquo;s Walker&rsquo;s Point. The DeMichele Company&rsquo;s  experience with two historic tax credit renovations in the Third Ward provided 88Nine with strong leadership in every phase of the project. Including selection of design professionals, financing, selection of Contractors through competitive bidding and on&#45;time project completion. The 23,000 sq ft project now includes 88Nine&rsquo;s Studio, Broadcast, and Corporate HQ as well as a Stone Creek Coffee, Performance space, Rooftop Audio Deck and green roof garden.</p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-1.jpg" alt="88Nine exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-2.jpg" alt="88Nine interior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-3.jpg" alt="88Nine interior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-4.jpg" alt="88Nine exterior" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">Restat, a Dohmen Company</h2>
+										<ul class="list-inline">
+											<li>Pre&#45;development site&#45;selection</li>
+											<li>Lease Negotiation</li>
+											<li>Owner&rsquo;s Representation</li>
+										</ul>
+									</header>
+									<p class="project-description">Seeking enhanced value in a tight real estate market and closer proximity to corporate milwaukee, Dohmen retained The DeMichele Company to source a new site for the West Bend, WI, headquarters of its Restat subsidiary. We found a property in Milwaukee&rsquo;s Park Place development and conducted an RFP with the building owner (Liberty Property Trust). After negotiating a very strong lease interest in the property, The DeMichele Company acted as Owner&rsquo;s Representative to build out the 32,000 square foot property. The result was an enhanced corporate image for Restat.</p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/restat-1.jpg" alt="Restat interior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/restat-2.jpg" alt="Restat interior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/restat-3.jpg" alt="Restat interior" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">Sendik&rsquo;s on Downer</h2>
+										<ul class="list-inline">
+											<li>Owner</li>
+											<li>Developer</li>
+										</ul>
+									</header>
+									<p class="project-description">An enthusiastic East&#45;Side Milwaukee Leader, Michael DeMichele has a passion for the Downer Avenue Business District. His belief that an upscale, local boutique grocery store is critical to the vibrancy of the neighborhood led to our purchase of the Historic Sendik&rsquo;s on Downer for the company portfolio. The DeMichele Company negotiated a new lease of the store to the Nehring Family, operators of Nehring&rsquo;s Sendik&rsquo;s on Oakland, G Groppi&rsquo;s Food Market in Bay View, Nehring&rsquo;s Family Market in the Milwaukee Public Market and V. Richard&rsquo;s Bakery in Brookfield. The DeMichele Company and the Nehring&rsquo;s have undertaken a store transformation and renovation of this 23,000 sq ft 1926 landmark, saving grocery for the historic water tower neighborhood for generations to come.</p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-1.jpg" alt="Sendik&rsquo;s exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-2.jpg" alt="Sendik&rsquo;s exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-3.jpg" alt="Sendik&rsquo;s exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-4.jpg" alt="Sendik&rsquo;s exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-5.jpg" alt="Sendik&rsquo;s exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-6.jpg" alt="Sendik&rsquo;s exterior" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">Dohmen</h2>
+										<ul class="list-inline">
+											<li>Property Purchase</li>
+											<li>Design</li>
+											<li>Renovation</li>
+											<li>Management / Property Management</li>
+										</ul>
+									</header>
+									<p class="project-description">When Dohmen sought to consolidate their companies with a new corporate headquarters in the Third Ward, CEO Cynthia LaConte called upon The DeMichele Company to deliver on her highly ambitious vision. A strong creative collaboration ensued, resulting in the transformation of a vintage battery factory into an award-winning mid century modern gem. </p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-1.jpg" alt="Dohmen exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-2.jpg" alt="Dohmen exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-3.jpg" alt="Dohmen exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-4.jpg" alt="Dohmen exterior" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">Mortara Instrument</h2>
+										<ul class="list-inline">
+											<li>Concept Through Occupancy</li>
+											<li>Property Purchase</li>
+											<li>Demo</li>
+											<li>Design</li>
+											<li>Developmen</li>
+										</ul>
+									</header>
+									<p class="project-description">When Mortara&rsquo;s expansion of an existing manufacturing facility evolved into a more ambitious design, the company partnered with DeMichele to think more holistically about growth. Together, they considered a range of architectural and financial options that evolved into a new, state of the art manufacturing facility and campus setting with its existing headquarters. Delivered on time and budget.</p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/mortara-1.jpg" alt="Mortara exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/mortara-2.jpg" alt="Mortara exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/mortara-3.jpg" alt="Mortara exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/mortara-4.jpg" alt="Mortara exterior" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">Red Arrow Labs</h2>
+										<ul class="list-inline">
+											<li>Property Purchase</li>
+											<li>Design</li>
+											<li>Renovation</li>
+											<li>Management / Property Management</li>
+										</ul>
+									</header>
+									<p class="project-description">After completing Dohmen&rsquo;s ambitious headquarters project, DeMichele recognized an opportunity to acquire a strategically-located property across the street. The vision? Create a tech-driven campus to house Red Arrow Labs, Dohmen&rsquo;s recently acquired software development company. With an eye towardorganic growth and a cohesive design aesthetic in the dynamic Third Ward, DeMichele and Dohmen strengthened an already thriving center for business, innovation and creativity.</p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/red-arrow-1.jpg" alt="Red Arrow exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/red-arrow-2.jpg" alt="Red Arrow exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/red-arrow-3.jpg" alt="Red Arrow exterior" /></li>
+											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/red-arrow-4.jpg" alt="Red Arrow exterior" /></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="project">
+									<header class="project-header">
+										<h2 class="project-title">American Roller Company</h2>
+										<ul class="list-inline">
+											<li></li>
+										</ul>
+									</header>
+									<p class="project-description"></p>
+									<div class="project-image-slider">
+										<ul class="reduced slides slides-inner group">
+											<li></li>
+										</ul>
+									</div>
+								</article>
+							</li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="section-content">
-					<div class="row">
-						<div class="featured-projects-slider col" style="display:none">
-							<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
-							<ul class="reduced slides slides-outer group">
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">Harken Yacht Equipment</h2>
-											<ul class="list-inline">
-												<li>Concept through occupancy</li>
-											</ul>
-										</header>
-										<p class="project-description">The DeMichele Company managed all aspects of the Architecture, engineering, Harken Critical Manufacturing and Office Building Performance Specifications, Civil Engineer, Municipal Entitlements, DNR, DOT, WE Energies, Contractor Bidding and Contract Negotiation, Bank Draws and On-Site Overview for this 170,000 sq ft facility. The DeMichele Company saved 2.5 buildable acres by overcoming DNR setbacks, allowing a more favorable alignment of the building and more efficient use of the site. Moreover, we helped save hundreds of thousands of dollars through the competitive bidding process.</p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-1.jpg" alt="Harken exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-2.jpg" alt="Harken interior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-3.jpg" alt="Harken interior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/harken-4.jpg" alt="Harken warehouse" /></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">88Nine Radio Milwaukee</h2>
-											<ul class="list-inline">
-												<li>Real estate advisory</li>
-												<li>Project developer</li>
-												<li>Owner&rsquo;s representative</li>
-											</ul>
-										</header>
-										<p class="project-description">Renovated vacant 1940s industrial building in Milwaukee&rsquo;s Walker&rsquo;s Point. The DeMichele Company&rsquo;s  experience with two historic tax credit renovations in the Third Ward provided 88Nine with strong leadership in every phase of the project. Including selection of design professionals, financing, selection of Contractors through competitive bidding and on&#45;time project completion. The 23,000 sq ft project now includes 88Nine&rsquo;s Studio, Broadcast, and Corporate HQ as well as a Stone Creek Coffee, Performance space, Rooftop Audio Deck and green roof garden.</p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-1.jpg" alt="88Nine exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-2.jpg" alt="88Nine interior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-3.jpg" alt="88Nine interior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/88nine-4.jpg" alt="88Nine exterior" /></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">Restat, a Dohmen Company</h2>
-											<ul class="list-inline">
-												<li>Pre&#45;development site&#45;selection</li>
-												<li>Lease Negotiation</li>
-												<li>Owner&rsquo;s Representation</li>
-											</ul>
-										</header>
-										<p class="project-description">Seeking enhanced value in a tight real estate market and closer proximity to corporate milwaukee, Dohmen retained The DeMichele Company to source a new site for the West Bend, WI, headquarters of its Restat subsidiary. We found a property in Milwaukee&rsquo;s Park Place development and conducted an RFP with the building owner (Liberty Property Trust). After negotiating a very strong lease interest in the property, The DeMichele Company acted as Owner&rsquo;s Representative to build out the 32,000 square foot property. The result was an enhanced corporate image for Restat.</p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/restat-1.jpg" alt="Restat interior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/restat-2.jpg" alt="Restat interior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/restat-3.jpg" alt="Restat interior" /></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">Sendik&rsquo;s on Downer</h2>
-											<ul class="list-inline">
-												<li>Owner</li>
-												<li>Developer</li>
-											</ul>
-										</header>
-										<p class="project-description">An enthusiastic East&#45;Side Milwaukee Leader, Michael DeMichele has a passion for the Downer Avenue Business District. His belief that an upscale, local boutique grocery store is critical to the vibrancy of the neighborhood led to our purchase of the Historic Sendik&rsquo;s on Downer for the company portfolio. The DeMichele Company negotiated a new lease of the store to the Nehring Family, operators of Nehring&rsquo;s Sendik&rsquo;s on Oakland, G Groppi&rsquo;s Food Market in Bay View, Nehring&rsquo;s Family Market in the Milwaukee Public Market and V. Richard&rsquo;s Bakery in Brookfield. The DeMichele Company and the Nehring&rsquo;s have undertaken a store transformation and renovation of this 23,000 sq ft 1926 landmark, saving grocery for the historic water tower neighborhood for generations to come.</p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-1.jpg" alt="Sendik&rsquo;s exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-2.jpg" alt="Sendik&rsquo;s exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/sendiks-3.jpg" alt="Sendik&rsquo;s exterior" /></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">Dohmen</h2>
-											<ul class="list-inline">
-												<li>Property Purchase</li>
-												<li>Design</li>
-												<li>Renovation</li>
-												<li>Management/Property Management</li>
-											</ul>
-										</header>
-										<p class="project-description">When Dohmen sought to consolidate their companies with a new corporate headquarters in the Third Ward, CEO Cynthia LaConte called upon The DeMichele Company to deliver on her highly ambitious vision. A strong creative collaboration ensued, resulting in the transformation of a vintage battery factory into an award-winning mid century modern gem. </p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-1.jpg" alt="Dohmen exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-2.jpg" alt="Dohmen exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-3.jpg" alt="Dohmen exterior" /></li>
-												<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/dohmen-4.jpg" alt="Dohmen exterior" /></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">Mortara Instrument</h2>
-											<ul class="list-inline">
-												<li>Concept Through Occupancy</li>
-												<li>Property Purchase</li>
-												<li>Demo</li>
-												<li>Design</li>
-												<li>Developmen</li>
-											</ul>
-										</header>
-										<p class="project-description">When Mortara&rsquo;s expansion of an existing manufacturing facility evolved into a more ambitious design, the company partnered with DeMichele to think more holistically about growth. Together, they considered a range of architectural and financial options that evolved into a new, state of the art manufacturing facility and campus setting with its existing headquarters. Delivered on time and budget.</p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">Red Arrow Labs</h2>
-											<ul class="list-inline">
-												<li>Property Purchase</li>
-												<li>Design</li>
-												<li>Renovation</li>
-												<li>Management/Property Management</li>
-											</ul>
-										</header>
-										<p class="project-description">After completing Dohmen&rsquo;s ambitious headquarters project, DeMichele recognized an opportunity to acquire a strategically-located property across the street. The vision? Create a tech-driven campus to house Red Arrow Labs, Dohmen&rsquo;s recently acquired software development company. With an eye towardorganic growth and a cohesive design aesthetic in the dynamic Third Ward, DeMichele and Dohmen strengthened an already thriving center for business, innovation and creativity.</p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-								<li>
-									<article class="project">
-										<header class="project-header">
-											<h2 class="project-title">American Roller Company</h2>
-											<ul class="list-inline">
-												<li></li>
-											</ul>
-										</header>
-										<p class="project-description"></p>
-										<div class="project-image-slider">
-											<ul class="reduced slides slides-inner group">
-												<li></li>
-											</ul>
-										</div>
-									</article>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<ul class="reduced featured-projects-nav row">
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-harken.png" srcset="/public/img/logo-harken@2x.png 2x" alt="Harken" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-889.png" srcset="/public/img/logo-889@2x.png 2x" alt="88.9 Radio Milwaukee" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-restat.png" srcset="/public/img/logo-restat@2x.png 2x" alt="Restat" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-sendiks.png" srcset="/public/img/logo-sendiks@2x.png 2x" alt="Sendik&rsquo;s" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-dohmen.png" srcset="/public/img/logo-dohmen@2x.png 2x" alt="Dohmen" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-mortara.png" srcset="/public/img/logo-mortara@2x.png 2x" alt="Mortara Instrument" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-red-arrow.png" srcset="/public/img/logo-red-arrow@2x.png 2x" alt="Red Arrow Labs" />
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="/public/img/logo-american-roller-company.png" srcset="/public/img/logo-american-roller-company.png 2x" alt="American Roller Company" />
-							</a>
-						</li>
-					</ul>
-				</div>
+				<ul class="reduced featured-projects-nav row">
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-harken.png" srcset="/public/img/logo-harken@2x.png 2x" alt="Harken" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-889.png" srcset="/public/img/logo-889@2x.png 2x" alt="88.9 Radio Milwaukee" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-restat.png" srcset="/public/img/logo-restat@2x.png 2x" alt="Restat" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-sendiks.png" srcset="/public/img/logo-sendiks@2x.png 2x" alt="Sendik&rsquo;s" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-dohmen.png" srcset="/public/img/logo-dohmen@2x.png 2x" alt="Dohmen" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-mortara.png" srcset="/public/img/logo-mortara@2x.png 2x" alt="Mortara Instrument" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-red-arrow.png" srcset="/public/img/logo-red-arrow@2x.png 2x" alt="Red Arrow Labs" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="/public/img/logo-american-roller-company.png" srcset="/public/img/logo-american-roller-company.png 2x" alt="American Roller Company" />
+						</a>
+					</li>
+				</ul>
 			</section>
 
-			<div class="parallax"
-				data-background-image="/public/img/parallax-3.jpg"
-				data-stellar-background-ratio="0.5"
-				data-horizontal-scrolling="false">
-			</div>
+			<div class="parallax" data-background-image="/public/img/parallax-3.jpg"
+			data-stellar-background-ratio="0.5" data-horizontal-scrolling="false"></div>
 
 			<section class="section section-contact" id="contact">
-				<div class="section-header row">
-					<div class="col">
-						<h2 class="section-title">Start making every <span>square foot smarter.</span></h2>
-					</div>
-				</div>
-
-				<div class="section-content row">
-					<div class="col">
-						<a class="btn" href="mailto:michael@demichele.com">Contact DeMichele</a>
-					</div>
-				</div>
+				<h2 class="section-title">Start making every square foot smarter.</h2>
+				<a class="btn" href="mailto:michael@demichele.com">Contact DeMichele</a>
 			</section>
 
-			<div class="parallax"
-				data-background-image="/public/img/parallax-4.jpg"
-				data-stellar-background-ratio="0.5"
-				data-horizontal-scrolling="false">
-			</div>
+			<div class="parallax" data-background-image="/public/img/parallax-4.jpg"
+			data-stellar-background-ratio="0.5" data-horizontal-scrolling="false"></div>
 		</main>
 
 		<footer id="site-footer">
 			<div class="row">
 				<div class="col md-8 last">
-					<nav class="utility">
-						<h6 class="assistive-text">Utility navigation</h6>
+					<nav class="footer-nav">
+						<h6 class="assistive-text">Footer navigation</h6>
 						<ul class="list-inline">
 							<li><a href="tel:4142722283">414.272.2283</a></li>
 							<li><a href="mailto:michael@demichele.com">michael@demichele.com</a></li>
@@ -500,7 +479,7 @@
 					</nav>
 				</div>
 				<div class="col md-4">
-					<small class="copyright">&copy; <span class="year"></span> DeMichele Company</small>
+					<small class="copyright">&copy; <span class="year">2017</span> DeMichele Company</small>
 				</div>
 			</div>
 		</footer>

@@ -79,6 +79,7 @@
 	text-align: justify;
 	font-size: 12px;
 	font-weight: 200;
+	min-height: 105/12 * 1em;
 }
 
 .project-image-slider {
@@ -127,7 +128,6 @@
 	}
 
 	&:hover {
-
 		.flex-direction-nav {
 			opacity: 1;
 		}
@@ -144,37 +144,40 @@
 	li {
 		float: left;
 		margin: 3px;
+		width: calc(25% - 6px);
 	}
 
 	a {
 		position: relative;
 		display: block;
-		width: 210px;
-		height: 210px;
+		padding-bottom: 100%;
+		overflow: hidden;
 		background-color: #d7d7d7;
 		transition: background-color 300ms;
 
-		&:hover,
-		&.flex-active {
+		&:hover {
 			background-color: #fff;
 		}
 
 		&.flex-active {
+			background-color: #fff;
 
 			img {
 				filter: grayscale(0);
 			}
 		}
+	}
 
-		img {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			margin: auto;
-			filter: grayscale(100%);
-			transition: filter 300ms;
-		}
+	img {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		bottom: 20px;
+		left: 20px;
+		margin: auto;
+		max-width: calc(100% - 40px);
+		max-height: calc(100% - 40px);
+		filter: grayscale(100%);
+		transition: filter 300ms;
 	}
 }

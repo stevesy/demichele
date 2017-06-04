@@ -1,12 +1,8 @@
 .section-contact {
+	padding: 200px 0;
+	text-align: center;
 
 	.section-title {
 		font-size: $font-size-h1;
-
-		span { display: inline-block; }
-	}
-
-	.section-content {
-		text-align: center;
 	}
 }
