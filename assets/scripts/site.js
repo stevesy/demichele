@@ -86,8 +86,6 @@ $slide1Img.load(function() {
 	$('.slides').css('opacity',1);
 	$('.slider').flexslider({
 		animation: 'slide',
-		useCSS: false,
-		multipleKeyboard: false,
 		controlNav: false,
 		directionNav: false,
 		slideshowSpeed,
@@ -139,8 +137,6 @@ $('.featured-projects-slider .close').on('click tap', function(e) {
 
 $('.featured-projects-slider').flexslider({
 	animation: 'fade',
-	useCSS: false,
-	multipleKeyboard: false,
 	manualControls: '.featured-projects-nav a',
 	slideshow: false,
 	selector: '.slides-outer > li',
