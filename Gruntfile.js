@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 					}
 				},
 				files: {
-					'public/js/site.js': 'assets/scripts/site.js'
+					'website/public/js/site.js': 'website/assets/scripts/site.js'
 				}
 			}
 		},
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 					quoteStyle: 1,
 				},
 				files: {
-					'public/js/site.js': 'public/js/site.js'
+					'website/public/js/site.js': 'website/public/js/site.js'
 				}
 			}
 		},
@@ -34,7 +34,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'public/css/site.css': 'assets/styles/site.scss'
+					'website/public/css/site.css': 'website/assets/styles/site.scss'
 				}
 			}
 		},
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
 				]
 			},
 			dist: {
-				src: 'public/css/site.css'
+				src: 'website/public/css/site.css'
 			}
 		},
 
@@ -62,9 +62,9 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'assets/images/',
+					cwd: 'website/assets/images/',
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'public/img/'
+					dest: 'website/public/img/'
 				}]
 			}
 		},
@@ -72,19 +72,19 @@ module.exports = function (grunt) {
 		copy: {
 			fonts: {
 				expand: true,
-				cwd: 'assets/fonts/',
+				cwd: 'website/assets/fonts/',
 				src: '**',
-				dest: 'public/fonts/',
+				dest: 'website/public/fonts/',
 			}
 		},
 
 		watch: {
 			css: {
-				files: ['assets/styles/**/*.scss'],
+				files: ['website/assets/styles/**/*.scss'],
 				tasks: 'sass'
 			},
 			js: {
-				files: ['Gruntfile.js', 'assets/scripts/**/*.js'],
+				files: ['Gruntfile.js', 'website/assets/scripts/**/*.js'],
 				tasks: 'browserify'
 			}
 		}

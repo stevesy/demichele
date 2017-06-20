@@ -19,7 +19,7 @@
     "grunt-sass": "^2.0.0"
   },
   "scripts": {
-    "start": "http-server ./ -p 1337 -o",
+    "start": "http-server ./website -p 1234 -o -a localhost",
     "watch": "grunt watch",
     "build": "grunt browserify && grunt sass && grunt newer:copy && grunt newer:imagemin",
     "build:prod": "grunt browserify && grunt uglify && grunt sass && grunt postcss && grunt newer:copy && grunt newer:imagemin"
