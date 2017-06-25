@@ -134,13 +134,15 @@ $featuredProjectsSlider.flexslider({
 
 		$('.featured-projects-nav').css('opacity',1);
 
-		$('.featured-projects-nav a').on('click tap', function() {
+		$('.featured-projects-nav a').on('click tap', function(e) {
+			e.preventDefault();
 			const $this = $(this);
 			if (!$featuredProjectsSlider.hasClass('open')) {
 				$featuredProjectsSlider.slideDown('150').addClass('open');
 				$('html, body').animate({
 					scrollTop: $featuredProjectsSlider.offset().top - 90
 				}, 400, 'easeInOutSine');
+				$this.trigger('click');
 				$this.addClass('flex-active');
 			}
 		});
