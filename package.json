@@ -21,11 +21,13 @@
   "scripts": {
     "start": "http-server ./website -p 1234 -o -a localhost",
     "watch": "grunt watch",
-    "build": "grunt browserify && grunt sass && grunt newer:copy && grunt newer:imagemin",
-    "build:prod": "grunt browserify && grunt uglify && grunt sass && grunt postcss && grunt newer:copy && grunt newer:imagemin"
+    "build": "grunt modernizr && grunt browserify && grunt sass && grunt newer:copy && grunt newer:imagemin",
+    "build:prod": "grunt modernizr && grunt browserify && grunt uglify && grunt sass && grunt postcss && grunt newer:copy && grunt newer:imagemin"
   },
   "dependencies": {
+    "grunt-modernizr": "^1.0.2",
     "http-server": "^0.9.0",
+    "modernizr": "^3.5.0",
     "normalize.css": "^7.0.0"
   }
 }

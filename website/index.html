@@ -8,7 +8,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link href="/public/css/site.css" rel="stylesheet" />
-		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+		<script src="/public/js/modernizr.js"></script>
 		<script>
 			var gaAccount = window.location.hostname.indexOf('demichele.com') !== -1 ? 'UA-32987284-2' : 'UA-XXXXXX-X';
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -76,8 +76,8 @@
 								<div class="row">
 									<div class="col">
 										<q>A thoughtful, modern architect with a true understanding of commercial development.</q>
-										<span class="source">Dr. Steve Brule</span>
-										<span class="source-title">Channel 5 News Reporter</span>
+										<span class="source">Dale Mittelstaedt</span>
+										<span class="source-title">President, Red Arrow Labs</span>
 									</div>
 								</div>
 							</div>
@@ -239,10 +239,10 @@
 					<h2 class="section-title">Featured Projects</h2>
 				</div>
 				<div class="row">
-					<div class="featured-projects-slider col" style="display:none">
+					<div class="featured-projects-slider col" style="display:none;">
 						<a class="close" href="#">X<span class="assistive-text"> Close</span></a>
 						<ul class="reduced slides slides-outer group">
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">Harken Yacht Equipment</h2>
@@ -261,7 +261,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">88Nine Radio Milwaukee</h2>
@@ -282,7 +282,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">Restat, a Dohmen Company</h2>
@@ -302,7 +302,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">Sendik&rsquo;s on Downer</h2>
@@ -324,7 +324,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">Dohmen</h2>
@@ -346,7 +346,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">Mortara Instrument</h2>
@@ -369,7 +369,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">Red Arrow Labs</h2>
@@ -380,7 +380,7 @@
 											<li>Management / Property Management</li>
 										</ul>
 									</header>
-									<p class="project-description">After completing Dohmen&rsquo;s ambitious headquarters project, DeMichele recognized an opportunity to acquire a strategically-located property across the street. The vision? Create a tech-driven campus to house Red Arrow Labs, Dohmen&rsquo;s recently acquired software development company. With an eye towardorganic growth and a cohesive design aesthetic in the dynamic Third Ward, DeMichele and Dohmen strengthened an already thriving center for business, innovation and creativity.</p>
+									<p class="project-description">After completing Dohmen&rsquo;s ambitious headquarters project, DeMichele recognized an opportunity to acquire a strategically-located property across the street. The vision? Create a tech-driven campus to house Red Arrow Labs, Dohmen&rsquo;s recently acquired software development company. With an eye toward organic growth and a cohesive design aesthetic in the dynamic Third Ward, DeMichele and Dohmen strengthened an already thriving center for business, innovation and creativity.</p>
 									<div class="project-image-slider">
 										<ul class="reduced slides slides-inner group">
 											<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/public/img/red-arrow-1.jpg" alt="Red Arrow exterior" /></li>
@@ -391,7 +391,7 @@
 									</div>
 								</article>
 							</li>
-							<li>
+							<!--<li class="slide">
 								<article class="project">
 									<header class="project-header">
 										<h2 class="project-title">American Roller Company</h2>
@@ -406,12 +406,12 @@
 										</ul>
 									</div>
 								</article>
-							</li>
+							</li>-->
 						</ul>
 					</div>
 				</div>
 
-				<ul class="reduced featured-projects-nav row">
+				<ol class="featured-projects-nav row">
 					<li>
 						<a href="#">
 							<img src="/public/img/logo-harken.png" srcset="/public/img/logo-harken@2x.png 2x" alt="Harken" />
@@ -448,11 +448,11 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<!--<a href="#">
 							<img src="/public/img/logo-american-roller-company.png" srcset="/public/img/logo-american-roller-company.png 2x" alt="American Roller Company" />
-						</a>
+						</a>-->
 					</li>
-				</ul>
+				</ol>
 			</section>
 
 			<div class="parallax" data-background-image="/public/img/parallax-3.jpg"
@@ -469,7 +469,7 @@
 
 		<footer id="site-footer">
 			<div class="row">
-				<div class="col md-8 last">
+				<div class="col sm-8 last">
 					<nav class="footer-nav">
 						<h6 class="assistive-text">Footer navigation</h6>
 						<ul class="list-inline">
@@ -478,8 +478,10 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col md-4">
-					<small class="copyright">&copy; <span class="year">2017</span> DeMichele Company</small>
+				<div class="col sm-4">
+					<small class="copyright">
+						&copy; <span class="year"></span> DeMichele Company
+					</small>
 				</div>
 			</div>
 		</footer>

@@ -2,6 +2,22 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		modernizr: {
+			dist: {
+				'crawl': false,
+				'customTests': [],
+				'dest': 'website/public/js/modernizr.js',
+				'tests': [
+					'touchevents'
+				],
+				'options': [
+					'html5shiv',
+					'setClasses'
+				],
+				'uglify': true
+			}
+		},
+
 		browserify: {
 			dist: {
 				options: {
@@ -90,6 +106,7 @@ module.exports = function (grunt) {
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-modernizr');
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-sass');

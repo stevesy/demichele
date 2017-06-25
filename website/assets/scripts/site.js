@@ -1,14 +1,5 @@
 const $ = window.jQuery;
 
-const isMobile = navigator.userAgent.toLowerCase()
-	.match(/(iphone|ipod|ipad|android|blackberry|opera mini|iemobile|kindle|silk|mobile)/);
-
-if (isMobile) {
-	document.documentElement.className += ' mobile';
-} else {
-	document.documentElement.className += ' no-mobile';
-}
-
 const checkScrollArea = function() {
 	const scrollTop = $(window).scrollTop();
 	$('#site-nav .nav-item').removeClass('current');
@@ -43,11 +34,6 @@ const loadParallaxImage = function() {
 		$(this).css('background-image',`url(${$(this).data('background-image')})`);
 	});
 };
-
-// disable tel links on non-mobilr devices
-$('.no-mobile a[href^="tel:"]').on('click tap', function(e) {
-	e.preventDefault();
-});
 
 // smooth scrolling
 $('a[href*="#"]:not([href="#"])').on('click tap', function() {
@@ -125,17 +111,11 @@ $('.modal .close').on('click tap', function(e) {
 	$(this).parents('.modal').fadeOut('150').removeClass('active');
 });
 
-// featured projects slider
-$('.featured-projects-slider .close').on('click tap', function(e) {
-	e.preventDefault();
-	$('.featured-projects-slider').slideUp('150').removeClass('open');
-	$('.featured-projects-nav .flex-active').removeClass('flex-active');
-	$('html, body').animate({
-		scrollTop: $('#projects').offset().top
-	}, 400, 'easeInOutSine');
-});
 
-$('.featured-projects-slider').flexslider({
+// featured projects slider
+const $featuredProjectsSlider = $('.featured-projects-slider');
+
+$featuredProjectsSlider.flexslider({
 	animation: 'fade',
 	manualControls: '.featured-projects-nav a',
 	slideshow: false,
@@ -149,6 +129,30 @@ $('.featured-projects-slider').flexslider({
 				$(this).removeAttr('data-src');
 			}
 		});
+
+		$('.featured-projects-nav .flex-active').removeClass('flex-active');
+
+		$('.featured-projects-nav').css('opacity',1);
+
+		$('.featured-projects-nav a').on('click tap', function() {
+			const $this = $(this);
+			if (!$featuredProjectsSlider.hasClass('open')) {
+				$featuredProjectsSlider.slideDown('150').addClass('open');
+				$('html, body').animate({
+					scrollTop: $featuredProjectsSlider.offset().top - 90
+				}, 400, 'easeInOutSine');
+				$this.addClass('flex-active');
+			}
+		});
+
+		$featuredProjectsSlider.find('.close').on('click tap', function(e) {
+			e.preventDefault();
+			$featuredProjectsSlider.slideUp('150').removeClass('open');
+			$('.featured-projects-nav .flex-active').removeClass('flex-active');
+			$('html, body').animate({
+				scrollTop: $('#projects').offset().top
+			}, 400, 'easeInOutSine');
+		});
 	},
 	after(slider) {
 		$(slider).find('.flex-active-slide img').each(function() {
@@ -159,8 +163,6 @@ $('.featured-projects-slider').flexslider({
 		});
 	}
 });
-
-$('.featured-projects-nav .flex-active').removeClass('flex-active');
 
 $('.project-image-slider').each(function() {
 	$(this).flexslider({
@@ -175,18 +177,6 @@ $('.project-image-slider').each(function() {
 	});
 });
 
-$('.featured-projects-nav a').on('click tap', function(e) {
-	e.preventDefault();
-	const $this = $(this);
-	if (!$('.featured-projects-slider').hasClass('open')) {
-		$('.featured-projects-slider').slideDown('150').addClass('open');
-		$('html, body').animate({
-			scrollTop: $('.featured-projects-slider').offset().top - 90
-		}, 400, 'easeInOutSine');
-		$this.trigger('click');
-		$this.addClass('flex-active');
-	}
-});
 
 $('.copyright .year').text(new Date().getFullYear());
 
