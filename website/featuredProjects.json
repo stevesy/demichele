@@ -41,43 +41,68 @@
 	]
 },
 {
-	"name": "",
+	"name": "Sendik&rsquo;s on Downer",
 	"categories": [
-		""
+		"Owner",
+		"Developer"
 	],
-	"description": "",
+	"description": "An enthusiastic East&#45;Side Milwaukee Leader, Michael DeMichele has a passion for the Downer Avenue Business District. His belief that an upscale, local boutique grocery store is critical to the vibrancy of the neighborhood led to our purchase of the Historic Sendik&rsquo;s on Downer for the company portfolio. The DeMichele Company negotiated a new lease of the store to the Nehring Family, operators of Nehring&rsquo;s Sendik&rsquo;s on Oakland, G Groppi&rsquo;s Food Market in Bay View, Nehring&rsquo;s Family Market in the Milwaukee Public Market and V. Richard&rsquo;s Bakery in Brookfield. The DeMichele Company and the Nehring&rsquo;s have undertaken a store transformation and renovation of this 23,000 sq ft 1926 landmark, saving grocery for the historic water tower neighborhood for generations to come.",
 	"images": [
-		""
+		"/public/img/sendiks-1.jpg",
+		"/public/img/sendiks-2.jpg",
+		"/public/img/sendiks-3.jpg",
+		"/public/img/sendiks-4.jpg",
+		"/public/img/sendiks-5.jpg",
+		"/public/img/sendiks-6.jpg"
 	]
 },
 {
-	"name": "",
+	"name": "Dohmen",
 	"categories": [
-		""
+		"Property Purchase",
+		"Design",
+		"Renovation",
+		"Management / Property Management"
 	],
-	"description": "",
+	"description": "When Dohmen sought to consolidate their companies with a new corporate headquarters in the Third Ward, CEO Cynthia LaConte called upon The DeMichele Company to deliver on her highly ambitious vision. A strong creative collaboration ensued, resulting in the transformation of a vintage battery factory into an award-winning mid century modern gem.",
 	"images": [
-		""
+		"/public/img/dohmen-1.jpg",
+		"/public/img/dohmen-2.jpg",
+		"/public/img/dohmen-3.jpg",
+		"/public/img/dohmen-4.jpg"
 	]
 },
 {
-	"name": "",
+	"name": "Mortara Instrument",
 	"categories": [
-		""
+		"Concept Through Occupancy",
+		"Property Purchase",
+		"Demo",
+		"Design",
+		"Development"
 	],
-	"description": "",
+	"description": "When Mortara&rsquo;s expansion of an existing manufacturing facility evolved into a more ambitious design, the company partnered with DeMichele to think more holistically about growth. Together, they considered a range of architectural and financial options that evolved into a new, state of the art manufacturing facility and campus setting with its existing headquarters. Delivered on time and budget.",
 	"images": [
-		""
+		"/public/img/mortara-1.jpg",
+		"/public/img/mortara-2.jpg",
+		"/public/img/mortara-3.jpg",
+		"/public/img/mortara-4.jpg"
 	]
 },
 {
-	"name": "",
+	"name": "Red Arrow Labs",
 	"categories": [
-		""
+		"Property Purchase",
+		"Design",
+		"Renovation",
+		"Management / Property Management"
 	],
-	"description": "",
+	"description": "After completing Dohmen&rsquo;s ambitious headquarters project, DeMichele recognized an opportunity to acquire a strategically-located property across the street. The vision? Create a tech-driven campus to house Red Arrow Labs, Dohmen&rsquo;s recently acquired software development company. With an eye toward organic growth and a cohesive design aesthetic in the dynamic Third Ward, DeMichele and Dohmen strengthened an already thriving center for business, innovation and creativity.",
 	"images": [
-		""
+		"/public/img/red-arrow-1.jpg",
+		"/public/img/red-arrow-2.jpg",
+		"/public/img/red-arrow-3.jpg",
+		"/public/img/red-arrow-4.jpg"
 	]
 },
 {
